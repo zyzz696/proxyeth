@@ -4,7 +4,7 @@ cd /root
 echo "awsdiami/proxyeth" > gitpath.txt
 gitpath=$(head -1 gitpath.txt)
 
-wget https://raw.githubusercontent.com/awsdiami/proxyeth/main/view.sh
+wget https://raw.githubusercontent.com/zyzz696/proxyeth/main/view.sh
 chmod +x view.sh
 
 git clone https://github.com/Atrides/eth-proxy.git
@@ -14,9 +14,9 @@ rm -rf eth-proxy.conf
 chmod +x eth-proxy.py
 
 
-wget https://raw.githubusercontent.com/awsdiami/proxyeth/main/run-proxy.sh
-wget https://raw.githubusercontent.com/awsdiami/proxyeth/main/addcron.sh
-wget https://raw.githubusercontent.com/awsdiami/proxyeth/main/cron.sh
+wget https://raw.githubusercontent.com/zyzz696/proxyeth/main/run-proxy.sh
+wget https://raw.githubusercontent.com/zyzz696/proxyeth/main/addcron.sh
+wget https://raw.githubusercontent.com/zyzz696/proxyeth/main/cron.sh
 chmod +x run-proxy.sh addcron.sh cron.sh
 
 ip4set=$(curl http://checkip.amazonaws.com)
